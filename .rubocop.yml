@@ -1,0 +1,33 @@
+inherit_from:
+  - .rubocop_airbnb.yml
+
+require: rubocop-rspec
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  Exclude:
+    - 'config/environments/production.rb'
+
+Style/MixinUsage:
+  Exclude:
+    - 'bin/setup'
+    - 'bin/update'
+
+Style/RedundantBegin:
+  Exclude:
+    - 'bin/yarn'
+
+Style/StderrPuts:
+  Exclude:
+    - 'bin/yarn'
+
+Style/PercentLiteralDelimiters:
+  Exclude:
+    - 'config/spring.rb'
+
+Style/TrailingCommaInHashLiteral:
+  Exclude:
+    - 'config/environments/development.rb'
+    - 'config/environments/test.rb'
+
+Metrics/LineLength:
+  Max: 112
