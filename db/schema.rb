@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_04_133053) do
+ActiveRecord::Schema.define(version: 2019_07_05_045133) do
 
   create_table "madness_taxonomies", force: :cascade do |t|
     t.string "name", null: false
-    t.integer "position"
+    t.integer "position", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["position"], name: "index_madness_taxonomies_on_position"

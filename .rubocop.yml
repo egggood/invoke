@@ -29,5 +29,9 @@ Style/TrailingCommaInHashLiteral:
     - 'config/environments/development.rb'
     - 'config/environments/test.rb'
 
+Layout/EmptyLinesAroundBlockBody:
+  Exclude:
+    - 'db/schema.rb'
+
 Metrics/LineLength:
   Max: 112
